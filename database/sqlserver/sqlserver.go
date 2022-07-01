@@ -27,7 +27,7 @@ func init() {
 // DefaultMigrationsTable is the name of the migrations table in the database
 var DefaultMigrationsTable = "schema_migrations"
 var DefaultMultiStatementMaxSize = 10 * 1 << 20 // 10 MB
-var multiStmtDelimiter = []byte("GO")
+var multiStmtDelimiter = []byte(" GO ")
 
 var (
 	ErrNilConfig                 = fmt.Errorf("no config")
